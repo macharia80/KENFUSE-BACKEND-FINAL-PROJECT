@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: kenfuse-backend
+    runtime: python3
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd kenfuse/backend && python run.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PORT
+        value: 10000
