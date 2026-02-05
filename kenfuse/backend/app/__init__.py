@@ -50,9 +50,6 @@ def create_app(config_name='default'):
     
     return app
 
-# Create app instance for gunicorn
-app = create_app()
-
 def create_admin_user():
     from .models import User, UserRole
     from .extensions import bcrypt

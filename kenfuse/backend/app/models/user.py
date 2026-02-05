@@ -1,4 +1,4 @@
-from app.extensions import db, bcrypt
+from app import db, bcrypt
 from datetime import datetime
 import uuid
 import enum
