@@ -1,0 +1,16 @@
+FLASK_APP=run.py
+FLASK_ENV=development
+FLASK_DEBUG=1
+SECRET_KEY=your-super-secret-key-change-in-production
+JWT_SECRET_KEY=your-jwt-secret-key-change-in-production
+DATABASE_URL=postgresql://kenfuse:password@localhost:5432/kenfuse_db
+MPESA_CONSUMER_KEY=your_mpesa_consumer_key
+MPESA_CONSUMER_SECRET=your_mpesa_consumer_secret
+MPESA_SHORTCODE=174379
+MPESA_PASSKEY=your_mpesa_passkey
+MPESA_CALLBACK_URL=http://localhost:5000/api/payments/mpesa/callback
+STRIPE_SECRET_KEY=your_stripe_secret_key
+STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+ADMIN_EMAIL=admin@kenfuse.com
+ADMIN_PASSWORD=Admin@123

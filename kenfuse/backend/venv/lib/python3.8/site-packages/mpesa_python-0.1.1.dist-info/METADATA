@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mpesa-python
+Version: 0.1.1
+Summary: A Python SDK for integrating with the payment MPESSA API.
+Home-page: https://github.com/Johnnas12/mpesa_python_sdk
+Author: Yohanes Mesfin
+Author-email: yohanesmesfin3@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+Requires-Dist: pydantic
+
+UNKNOWN
+
+
