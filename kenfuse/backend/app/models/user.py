@@ -1,4 +1,6 @@
-from app import db, bcrypt
+from app.extensions import db
+from flask_bcrypt import Bcrypt
+bcrypt = Bcrypt()
 from datetime import datetime
 import uuid
 import enum
@@ -36,9 +38,13 @@ class User(db.Model):
     
     @password.setter
     def password(self, password):
+        from flask_bcrypt import Bcrypt
+        bcrypt = Bcrypt()
         self.password_hash = bcrypt.generate_password_hash(password).decode('utf-8')
-    
+
     def verify_password(self, password):
+        from flask_bcrypt import Bcrypt
+        bcrypt = Bcrypt()
         return bcrypt.check_password_hash(self.password_hash, password)
     
     def to_dict(self):
